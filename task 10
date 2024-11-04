@@ -3,7 +3,6 @@ import java.util.Scanner; // Импортируем класс Scanner для с
 
 public class  Main{
     public static void main(String[] args) {
-        // Инициализируем массив чисел
         int[] numbers = new int[]{1, 2, 5, 0, 9, 8, 845, 9, 10, 55};
 
         // Выводим массив до вставки элемента
@@ -18,13 +17,11 @@ public class  Main{
         Scanner scanner = new Scanner(System.in); // Создаем объект Scanner для считывания ввода
 
         int index; // Переменная для хранения индекса, куда будет вставлен элемент
-        // Запрашиваем у пользователя индекс для вставки элемента
         do {
             System.out.printf("Choose array element index to insert from 0 to %d: ", numbers.length);
             index = scanner.nextInt(); // Считываем индекс
         } while (index < 0 || index > numbers.length); // Проверяем, что индекс корректен
 
-        // Запрашиваем у пользователя значение для вставки
         System.out.print("Choose the value to insert: ");
         int valueToInsert = scanner.nextInt(); // Считываем значение
 
